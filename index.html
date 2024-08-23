@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task Management</h1>
+    </header>
+
+    <main>
+        <section class="task-form">
+            <h2>Add New Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <textarea id="task-desc" placeholder="Task Description"></textarea>
+                <input type="date" id="task-date" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-filters">
+            <button id="filter-all">All Tasks</button>
+            <button id="filter-completed">Completed</button>
+            <button id="filter-incomplete">Incomplete</button>
+            <input type="text" id="search-bar" placeholder="Search Tasks">
+        </section>
+
+        <section class="task-list">
+            <h2>Task List</h2>
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
